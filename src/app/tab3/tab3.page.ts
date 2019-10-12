@@ -12,10 +12,9 @@ export class Tab3Page {
 
   leaders: any[] = [
     {
-      imageUrl: '/assets/persons/neuer.jpg',
-      name: 'Manuel Neuer',
+      imageUrl: '/assets/persons/kerber.jpg',
+      name: 'Angelique Kerber',
       description: 'lorem ipsum',
-      color: "#D4AF37",
     },
     {
       imageUrl: '/assets/persons/kroos.jpg',
@@ -23,8 +22,33 @@ export class Tab3Page {
       description: 'lorem ipsum',
     },
     {
-      imageUrl: '/assets/persons/prescott.JPG',
+      imageUrl: '/assets/persons/daebritz.jpg',
+      name: 'Sara Däbritz',
+      description: 'lorem ipsum',
+    },
+    {
+      imageUrl: '/assets/persons/prescott.jpg',
       name: 'Dak Prescott',
+      description: 'lorem ipsum',
+    },
+    {
+      imageUrl: '/assets/persons/musterfrau2.jpg',
+      name: 'Jovana Morgan',
+      description: 'lorem ipsum',
+    },
+    {
+      imageUrl: '/assets/persons/neuer.jpg',
+      name: 'Manuel Neuer',
+      description: 'lorem ipsum',
+    },
+    {
+      imageUrl: '/assets/persons/mustermann.jpg',
+      name: 'Simon Scott',
+      description: 'lorem ipsum',
+    },
+    {
+      imageUrl: '/assets/persons/musterfrau.jpg',
+      name: 'Lisa Serana',
       description: 'lorem ipsum',
     },
   ];

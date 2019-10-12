@@ -9,5 +9,4 @@ export class LeaderBoardCardComponent {
   @Input() name: string;
   @Input() description: string;
   @Input() imageUrl: string;
-  @Input() color: string;
 }
