@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Platform } from '@ionic/angular';
+import { Platform, ToastController } from '@ionic/angular';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { FirebaseX } from '@ionic-native/firebase-x/ngx';
+import { tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +12,7 @@ export class FcmProviderService {
     public firebase: FirebaseX,
     public angularFirestore: AngularFirestore,
     private platform: Platform,
+    private toastController: ToastController,
   ) {}
 
   async getToken() {
@@ -48,6 +50,19 @@ export class FcmProviderService {
   }
 
   listenToNotifications() {
-    return this.firebase.onMessageReceived();
+    return this.firebase.onMessageReceived().pipe(
+      tap(message => {
+        // show a toast
+        this.toastController
+          .create({
+            header: message.title,
+            message: message.body,
+            duration: 5000,
+            position: 'top',
+            color: 'light',
+          })
+          .then(toast => toast.present());
+      }),
+    );
   }
 }
