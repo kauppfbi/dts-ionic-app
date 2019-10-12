@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-  constructor() {}
+  constructor(private loadingController: LoadingController) {}
 
   shoes: any[] = [
     {
@@ -28,4 +29,14 @@ export class Tab1Page {
       description: 'lorem ipsum',
     },
   ];
+
+  async registerShoe() {
+    const loading = await this.loadingController.create({
+      duration: 3000,
+      message: 'Registering your new Shoe...',
+      translucent: true,
+      spinner: 'circular',
+    });
+    return await loading.present();
+  }
 }
