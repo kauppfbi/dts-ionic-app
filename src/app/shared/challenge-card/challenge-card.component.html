@@ -1,0 +1,16 @@
+<ion-card class="challenge-card">
+  <img [src]="imageUrl" alt="" />
+  <ion-card-header>
+    <ion-card-subtitle>{{ subtitle }}</ion-card-subtitle>
+    <ion-card-title>{{ title }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>
+      {{ description }}
+      <span style="color: black;">(earn {{coins}} <ion-icon name="logo-bitcoin"></ion-icon> per kilometer)</span>
+      <br/>
+      <a href="#">» Read more</a>
+    </p>
+    <ion-button style="margin-top: 15px" expand="block" color="secondary">» Register for event «</ion-button>
+  </ion-card-content>
+</ion-card>
