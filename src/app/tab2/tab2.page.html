@@ -1,9 +1,20 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
-      Marketplace
+      Challenges
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-title style="margin-top:15px">Upcoming Events in October</ion-title>
+  <app-challenge-card
+    *ngFor="let challenge of challenges"
+    [title]="challenge.title"
+    [subtitle]="challenge.subtitle"
+    [description]="challenge.description"
+    [imageUrl]="challenge.imageUrl"
+    [coins]="challenge.coins"
+  ></app-challenge-card>
+
+</ion-content>
