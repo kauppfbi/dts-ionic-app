@@ -6,7 +6,8 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./tabs/tabs.module').then(m => m.TabsPageModule),
-  },
+  },  { path: 'firebase-connector', loadChildren: './firebase-connector/firebase-connector.module#FirebaseConnectorPageModule' },
+
 ];
 @NgModule({
   imports: [
