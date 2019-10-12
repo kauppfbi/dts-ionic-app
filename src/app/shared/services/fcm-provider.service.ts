@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Firebase } from '@ionic-native/firebase/ngx';
 import { Platform } from '@ionic/angular';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { FirebaseX } from '@ionic-native/firebase-x/ngx';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FcmProviderService {
   constructor(
-    public firebase: Firebase,
+    public firebase: FirebaseX,
     public angularFirestore: AngularFirestore,
     private platform: Platform,
   ) {}
@@ -48,6 +48,6 @@ export class FcmProviderService {
   }
 
   listenToNotifications() {
-    return this.firebase.onNotificationOpen();
+    return this.firebase.onMessageReceived();
   }
 }
