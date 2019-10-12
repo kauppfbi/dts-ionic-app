@@ -1,10 +1,10 @@
+import { LeaderBoardCardComponent } from './../shared/leader-board-card/leader-board-card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Tab3Page } from './tab3.page';
-import { BLE } from '@ionic-native/ble/ngx';
 
 @NgModule({
   imports: [
@@ -18,7 +18,6 @@ import { BLE } from '@ionic-native/ble/ngx';
       }
     ])
   ],
-  providers: [ BLE ],
-  declarations: [Tab3Page]
+  declarations: [Tab3Page, LeaderBoardCardComponent]
 })
 export class Tab3PageModule {}
