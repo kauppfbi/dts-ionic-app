@@ -9,47 +9,26 @@ import { LoadingController } from '@ionic/angular';
 })
 export class Tab3Page {
   constructor(private loadingController: LoadingController) {}
+  imageNeuerUrl = '/assets/persons/neuer.jpg';
 
   leaders: any[] = [
     {
-      imageUrl: '/assets/persons/kerber.jpg',
-      name: 'Angelique Kerber',
-      description: 'lorem ipsum',
-    },
-    {
-      imageUrl: '/assets/persons/kroos.jpg',
-      name: 'Toni Kroos',
-      description: 'lorem ipsum',
-    },
-    {
-      imageUrl: '/assets/persons/daebritz.jpg',
-      name: 'Sara Däbritz',
-      description: 'lorem ipsum',
-    },
-    {
-      imageUrl: '/assets/persons/prescott.jpg',
-      name: 'Dak Prescott',
-      description: 'lorem ipsum',
-    },
-    {
       imageUrl: '/assets/persons/musterfrau2.jpg',
       name: 'Jovana Morgan',
-      description: 'lorem ipsum',
-    },
-    {
-      imageUrl: '/assets/persons/neuer.jpg',
-      name: 'Manuel Neuer',
-      description: 'lorem ipsum',
+      description: 'Munich',
+      time: '00:48:37',
     },
     {
       imageUrl: '/assets/persons/mustermann.jpg',
       name: 'Simon Scott',
-      description: 'lorem ipsum',
+      description: 'Berlin',
+      time: '00:49:21',
     },
     {
       imageUrl: '/assets/persons/musterfrau.jpg',
       name: 'Lisa Serana',
-      description: 'lorem ipsum',
+      description: 'Nuremberg',
+      time: '01:01:10',
     },
   ];
 
