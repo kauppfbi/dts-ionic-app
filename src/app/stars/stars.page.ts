@@ -16,7 +16,7 @@ export class StarsPage implements OnInit {
       name: 'Cacau',
       imageUrl: '/assets/persons/cacau.png',
       sport: 'Soccer',
-      follow: true,
+      follow: false,
       shoes: [
         { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
         {
