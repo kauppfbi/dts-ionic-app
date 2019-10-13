@@ -15,21 +15,26 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="star-board-card">
-    <ion-item>
+  <ion-card>
+    <ion-item class="star-board-card">
       <ion-icon slot="start" name="star"></ion-icon>
       <ion-avatar slot="start">
         <img [src]="imageNeuerUrl" alt="" />
       </ion-avatar>
       <ion-label>
-        <h3>Manuel Neuer</h3>
+        <h3>Cacau</h3>
         <p>Your personal star.</p>
       </ion-label>
       <ion-note slot="end">
-        <h6>00:50:41</h6>
+        <h6>97 km/h</h6>
       </ion-note>
     </ion-item>
   </ion-card>
+  <ion-item-divider>
+      <ion-label class="attendees">
+         Score of attendees
+      </ion-label>
+    </ion-item-divider>
   <leader-board-card
     *ngFor="let leader of leaders; let i = index"
     [name]="leader.name"
