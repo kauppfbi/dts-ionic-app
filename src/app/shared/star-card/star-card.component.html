@@ -1,0 +1,19 @@
+<ion-list>
+  <ion-item>
+    <ion-avatar item-start>
+      <img [src]="imageUrl" />
+    </ion-avatar>
+    <ion-label>
+      <h2>{{ name }}</h2>
+      <h3>{{ sport }}</h3>
+
+      <div *ngFor="let shoe of shoes; let i = index">
+        <ion-badge style="margin-right: 2px" color="primary">
+          <img src="{{ shoe.img }}" style="width: 20px;" />
+          {{ shoe.name }}
+        </ion-badge>
+      </div>
+    </ion-label>
+    <button ion-button clear item-end>Follow</button>
+  </ion-item>
+</ion-list>
