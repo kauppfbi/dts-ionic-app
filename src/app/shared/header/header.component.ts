@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +8,4 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent {
   @Input() title: string;
   @Input() coins: string;
-
-  @Input() hasBackButton: boolean;
 }

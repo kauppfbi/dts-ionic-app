@@ -1,17 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Leaderboard
+    </ion-title>
 
-<app-header
-  title="Leaderboard" 
-  coins="100"
-  hasBackButton="true">
-</app-header>
-
+    <ion-button slot="end" color="light" style="margin-right: 20px">
+      <p><b>1.200 </b></p>
+      <ion-icon slot="end" name="logo-bitcoin"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
   <ion-card class="star-board-card">
     <ion-item>
       <ion-icon slot="start" name="star"></ion-icon>
       <ion-avatar slot="start">
-        <img [src]="imageNeuerUrl" alt="">
+        <img [src]="imageNeuerUrl" alt="" />
       </ion-avatar>
       <ion-label>
         <h3>Manuel Neuer</h3>
@@ -27,6 +35,7 @@
     [name]="leader.name"
     [description]="leader.description"
     [imageUrl]="leader.imageUrl"
-    [position]="i+1"
-    [time]="leader.time"></leader-board-card>
+    [position]="i + 1"
+    [time]="leader.time"
+  ></leader-board-card>
 </ion-content>
