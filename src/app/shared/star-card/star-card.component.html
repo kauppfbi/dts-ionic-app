@@ -3,13 +3,13 @@
     <ion-avatar item-start>
       <img [src]="imageUrl" />
     </ion-avatar>
-    <ion-label>
+    <ion-label style="margin-left: 5px">
       <h2>{{ name }}</h2>
       <h3>{{ sport }}</h3>
 
       <div *ngFor="let shoe of shoes; let i = index">
         <ion-badge style="margin-right: 2px" color="primary">
-          <img src="{{ shoe.img }}" style="width: 20px;" />
+          <img [src]="shoe.img" style="height: 15px; border-radius: 5px" />
           {{ shoe.name }}
         </ion-badge>
       </div>
