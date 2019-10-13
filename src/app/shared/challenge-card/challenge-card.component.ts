@@ -14,4 +14,6 @@ export class ChallengeCardComponent {
   @Input() participants: string;
   @Input() location: string;
   @Input() category: string;
+  @Input() displayCoin: boolean;
+
 }
