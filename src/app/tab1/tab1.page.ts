@@ -14,19 +14,22 @@ export class Tab1Page {
       imageUrl: '/assets/ultraboost.jpg',
       title: 'Ultraboost 19 Shoe',
       subtitle: 'Bought 10.01.19',
-      description: 'lorem ipsum',
+      description: 0.7 * 750,
+      progress: '0.7',
     },
     {
       imageUrl: '/assets/ultraboost.jpg',
       title: 'Ultraboost 19 Shoe',
       subtitle: 'Bought 13.09.19',
-      description: 'lorem ipsum',
+      description: 0.4 * 750,
+      progress: '0.4',
     },
     {
       imageUrl: '/assets/ultraboost.jpg',
       title: 'Ultraboost 19 Shoe',
       subtitle: 'Bought 10.10.19',
-      description: 'lorem ipsum',
+      description: 0.9 * 750,
+      progress: '0.9',
     },
   ];
 
