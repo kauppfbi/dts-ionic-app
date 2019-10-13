@@ -8,4 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent {
   @Input() title: string;
   @Input() coins: string;
+
+  @Input() hasBackButton: boolean;
 }
