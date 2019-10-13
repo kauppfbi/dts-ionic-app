@@ -4,9 +4,9 @@
     <ion-card-subtitle>{{ subtitle }}</ion-card-subtitle>
     <ion-card-title>{{ title }}</ion-card-title>
   </ion-card-header>
+
   <ion-card-content>
-    <p>
-      {{ description }}
-    </p>
+    <p>Your progress {{ description }}km/750km</p>
+    <ion-progress-bar color="primary" [value]="progress"></ion-progress-bar>
   </ion-card-content>
 </ion-card>

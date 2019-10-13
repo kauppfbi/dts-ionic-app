@@ -10,4 +10,5 @@ export class ShoeCardComponent {
   @Input() subtitle: string;
   @Input() description: string;
   @Input() imageUrl: string;
+  @Input() progress: string;
 }
