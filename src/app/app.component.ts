@@ -1,4 +1,3 @@
-import { FcmProviderService } from './shared/services/fcm-provider.service';
 import { Component } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
@@ -18,7 +17,6 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private fcm: FcmProviderService,
     private router: Router,
   ) {
     this.initializeApp();
@@ -28,22 +26,6 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.preparePushNotifications();
     });
-  }
-
-  preparePushNotifications() {
-    // Get a FCM token
-    this.fcm.getToken();
-
-    this.fcm
-      .listenToNotifications()
-      .pipe(
-        tap(msg => {
-          console.log(msg);
-          this.router.navigate(['tab', 'tab2']);
-        }),
-      )
-      .subscribe();
   }
 }
