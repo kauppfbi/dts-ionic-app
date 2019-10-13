@@ -17,7 +17,17 @@
         </ion-badge>
       </div>
     </ion-label>
-    <button *ngIf="follow" ion-button clear item-end>Unfollow</button>
-    <button *ngIf="!follow" ion-button clear item-end>Follow</button>
+    <button *ngIf="follow" ion-button clear item-end (click)="follow = !follow">
+      Unfollow
+    </button>
+    <button
+      *ngIf="!follow"
+      ion-button
+      clear
+      item-end
+      (click)="follow = !follow"
+    >
+      Follow
+    </button>
   </ion-item>
 </ion-list>
