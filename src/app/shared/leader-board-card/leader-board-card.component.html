@@ -1,22 +1,20 @@
 <ion-card class="leader-board-card">
   <ion-item>
-    <ion-note slot="start">
+    <ion-note class="margin-10">
       <h3>{{ position }}</h3>
     </ion-note>
-    <ion-avatar slot="start">
-      <img [src]="imageUrl" alt="">
+    <ion-avatar class="margin-10">
+      <img [src]="imageUrl" alt="" />
     </ion-avatar>
-    <ion-label>
-      <h3>{{ name }}</h3>
-      <p>{{ time }}</p>
+    <ion-label style="overflow: visible;">
+      <p>{{ name }}</p>
     </ion-label>
 
     <ion-note slot="end">
-      <ion-chip>
-          <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
-          <ion-label>verified</ion-label>
-        </ion-chip>
+      <ion-chip color="success">
+        <ion-icon name="speedometer" color="success"></ion-icon>
+        <ion-label>{{ time }}</ion-label>
+      </ion-chip>
     </ion-note>
-  
   </ion-item>
 </ion-card>
