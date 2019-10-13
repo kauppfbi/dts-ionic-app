@@ -1,3 +1,4 @@
+import { HeaderModule } from './../shared/header/header.module';
 import { LeaderBoardCardComponent } from './../shared/leader-board-card/leader-board-card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,6 +10,7 @@ import { Tab3Page } from './tab3.page';
 @NgModule({
   imports: [
     CommonModule,
+    HeaderModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild([

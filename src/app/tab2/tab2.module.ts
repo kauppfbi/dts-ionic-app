@@ -1,3 +1,4 @@
+import { HeaderModule } from './../shared/header/header.module';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,7 @@ import { ChallengeCardComponent } from '../shared/challenge-card/challenge-card.
 
 @NgModule({
   imports: [
+    HeaderModule,
     IonicModule,
     CommonModule,
     FormsModule,
