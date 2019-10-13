@@ -35,19 +35,20 @@ export class Tab1Page {
 
   async registerShoe() {
     const loading = await this.loadingController.create({
-      duration: 3000,
+      duration: 1500,
       message: 'Registering your new Shoe...',
-      translucent: true,
+      translucent: false,
       spinner: 'circular',
     });
-    this.shoes.splice(0, 0, {
-      imageUrl: '/assets/gear/am4you.jpg',
-      title: 'AM4PAR',
-      subtitle: 'Bought 13.10.19',
-      description: 0,
-      progress: 0,
-    });
 
-    return await loading.present();
+    loading.present().then(() => {
+      this.shoes.splice(0, 0, {
+        imageUrl: '/assets/gear/am4you.jpg',
+        title: 'AM4PAR',
+        subtitle: 'Bought 13.10.19',
+        description: 0,
+        progress: 0,
+      });
+    });
   }
 }
