@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular'
 import { StarsPage } from './stars.page'
 
 import { StarCardComponent } from './../shared/star-card/star-card.component'
+import { HeaderModule } from './../shared/header/header.module'
 
 const routes: Routes = [
   {
@@ -21,7 +22,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    HeaderModule
   ],
   declarations: [StarsPage, StarCardComponent]
 })

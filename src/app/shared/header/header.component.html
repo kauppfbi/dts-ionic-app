@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons *ngIf="hasBackButton" slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{ title }}
+    </ion-title>
+
+    <ion-button slot="end" color="light" style="margin-right: 20px">
+      <p><b>1.200 </b></p>
+      <ion-icon slot="end" name="logo-bitcoin"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
