@@ -17,17 +17,25 @@
         </ion-badge>
       </div>
     </ion-label>
-    <button *ngIf="follow" ion-button clear item-end (click)="follow = !follow">
+    <ion-icon
+      *ngIf="follow"
+      name="star"
+      color="primary"
+      clear
+      item-end
+      (click)="follow = !follow"
+    >
       Unfollow
-    </button>
-    <button
+    </ion-icon>
+    <ion-icon
       *ngIf="!follow"
-      ion-button
+      name="star-outline"
+      color="primary"
       clear
       item-end
       (click)="follow = !follow"
     >
       Follow
-    </button>
+    </ion-icon>
   </ion-item>
 </ion-list>
