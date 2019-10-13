@@ -8,7 +8,11 @@ import { Component, Input } from '@angular/core';
 export class ShoeCardComponent {
   @Input() title: string;
   @Input() subtitle: string;
-  @Input() description: string;
+  @Input() description: number;
   @Input() imageUrl: string;
-  @Input() progress: string;
+  @Input() progress: number;
+
+  defineColor(progress: number) {
+    return progress < 0.3 ? 'danger' : progress < 0.7 ? 'warning' : 'success';
+  }
 }

@@ -7,6 +7,9 @@
 
   <ion-card-content>
     <p>Your progress {{ description }}km/750km</p>
-    <ion-progress-bar color="primary" [value]="progress"></ion-progress-bar>
+    <ion-progress-bar
+      [color]="defineColor(progress)"
+      [value]="progress"
+    ></ion-progress-bar>
   </ion-card-content>
 </ion-card>

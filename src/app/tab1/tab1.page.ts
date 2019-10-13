@@ -15,21 +15,21 @@ export class Tab1Page {
       title: 'Ultraboost 19 Shoe',
       subtitle: 'Bought 10.01.19',
       description: 0.7 * 750,
-      progress: '0.7',
+      progress: 0.7,
     },
     {
       imageUrl: '/assets/ultraboost.jpg',
       title: 'Ultraboost 19 Shoe',
       subtitle: 'Bought 13.09.19',
       description: 0.4 * 750,
-      progress: '0.4',
+      progress: 0.4,
     },
     {
       imageUrl: '/assets/ultraboost.jpg',
       title: 'Ultraboost 19 Shoe',
       subtitle: 'Bought 10.10.19',
       description: 0.9 * 750,
-      progress: '0.9',
+      progress: 0.9,
     },
   ];
 
@@ -41,10 +41,11 @@ export class Tab1Page {
       spinner: 'circular',
     });
     this.shoes.splice(0, 0, {
-      imageUrl: '/assets/ultraboost.jpg',
-      title: 'Hammer4You',
+      imageUrl: '/assets/gear/am4you.jpg',
+      title: 'AM4PAR',
       subtitle: 'Bought 13.10.19',
-      description: 'lorem ipsum',
+      description: 0,
+      progress: 0,
     });
 
     return await loading.present();
