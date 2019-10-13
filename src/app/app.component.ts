@@ -1,11 +1,12 @@
 import { FcmProviderService } from './shared/services/fcm-provider.service';
 import { Component } from '@angular/core';
 
-import { Platform, ToastController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private fcm: FcmProviderService,
-    private toastController: ToastController,
+    private router: Router,
   ) {
     this.initializeApp();
   }
@@ -40,6 +41,7 @@ export class AppComponent {
       .pipe(
         tap(msg => {
           console.log(msg);
+          this.router.navigate(['tab', 'tab2']);
         }),
       )
       .subscribe();

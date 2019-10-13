@@ -3,6 +3,7 @@ import { Platform, ToastController } from '@ionic/angular';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { FirebaseX } from '@ionic-native/firebase-x/ngx';
 import { tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -13,6 +14,7 @@ export class FcmProviderService {
     public angularFirestore: AngularFirestore,
     private platform: Platform,
     private toastController: ToastController,
+    private router: Router,
   ) {}
 
   async getToken() {
@@ -61,7 +63,11 @@ export class FcmProviderService {
             position: 'top',
             color: 'light',
           })
-          .then(toast => toast.present());
+          .then(toast => {
+            toast.present().then(() => {
+              this.router.navigate(['tabs', 'tab2']);
+            });
+          });
       }),
     );
   }
