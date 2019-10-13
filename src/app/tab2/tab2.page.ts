@@ -12,10 +12,10 @@ export class Tab2Page {
   challenges: any[] = [
     {
       imageUrl: '/assets/persons/nuremberg.png',
-      title: 'Shoot harder than Cacau',
+      title: 'Shoot faster than Cacau',
       subtitle: 'Sunday, 13. October',
       location: 'Max-Morlock Stadium',
-      category: 'Running',
+      category: 'Soccer',
       participants: '700',
       coins: 'get a card for Germany vs. Belgium on the 17.11.2019 in Freiburg',
       displayCoin: false,
