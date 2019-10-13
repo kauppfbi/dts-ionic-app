@@ -16,79 +16,101 @@ export class StarsPage implements OnInit {
       name: 'Cacau',
       imageUrl: '/assets/persons/cacau.png',
       sport: 'Soccer',
+      follow: true,
       shoes: [
-        { name: 'adidas Predator 19.3', img: '' },
-        { name: 'adidas Original JEANS', img: '' },
-        { name: 'adidas adicolor tech hoodie', img: '' }
+        { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
+        {
+          name: 'adidas Ultraboost 19 shoes',
+          img: '/assets/gear/ultraboost.webp'
+        }
       ]
-    },
-    {
-      name: 'Sara Däbritz',
-      imageUrl: '/assets/persons/daebritz.jpg',
-      sport: 'Soccer',
-      shoes: [{ name: 'adidas Predator 19.3', img: '' }]
     },
     {
       name: 'Angelique Kerber',
       imageUrl: '/assets/persons/kerber.jpg',
       sport: 'Tennis',
+      follow: false,
       shoes: [
-        { name: 'adidas Predator 19.3', img: '' },
-        { name: 'adidas Original JEANS', img: '' },
-        { name: 'adidas adicolor tech hoodie', img: '' }
+        { name: 'adidas Sole Match Count', img: '/assets/gear/kerber.jpg' }
       ]
     },
     {
       name: 'Toni Kroos',
       imageUrl: '/assets/persons/kroos.jpg',
       sport: 'Soccer',
+      follow: false,
       shoes: [
-        { name: 'adidas Predator 19.3', img: '' },
-        { name: 'adidas adicolor tech hoodie', img: '' }
+        { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
+        {
+          name: 'adidas adicolor tech hoodie',
+          img: '/assets/gear/pullover.webp'
+        }
       ]
     },
     {
       name: 'Manuel Neuer',
       imageUrl: '/assets/persons/neuer.jpg',
       sport: 'Soccer',
+      follow: false,
       shoes: [
         { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
+        { name: 'adidas Original JEANS', img: '/assets/gear/jeans.webp' },
         {
-          name: 'adidas Original JEANS',
-          img:
-            '/assets/gear/adidas-originals-jeans-footwear-white-collegiate-green-clear-brown.jpg'
-        }
+          name: 'adidas adicolor tech hoodie',
+          img: '/assets/gear/pullover.webp'
+        },
+        { name: 'adidas Plore Tshirt', img: '/assets/gear/shirt.png' }
       ]
     },
     {
       name: 'Jonas Mattisseck',
       imageUrl: '/assets/persons/JonasMattisseck.png',
       sport: 'Basketball',
+      follow: false,
       shoes: [
-        { name: 'adidas Predator 19.3', img: '' },
-        { name: 'adidas Original JEANS', img: '' }
+        { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' }
       ]
     },
     {
       name: 'Francis Obikwelu',
       imageUrl: '/assets/persons/FrancisObikwelu.png',
       sport: 'Sprinting',
-      shoes: [{ name: 'adidas Predator 19.3', img: '' }]
+      follow: false,
+      shoes: [
+        {
+          name: 'adidas Laufschuh adizero Prime',
+          img: '/assets/gear/adizero.png'
+        },
+        { name: 'adidas NMD R1 Tokyo', img: '/assets/gear/nmd.png' }
+      ]
     },
     {
       name: 'Aaron Rodgers',
       imageUrl: '/assets/persons/rodgers.jpg',
       sport: 'Football',
-      shoes: [{ name: 'adidas Predator 19.3', img: '' }]
+      follow: false,
+      shoes: [
+        { name: 'Adidas Football 1', img: '/assets/gear/rodgersshue.jpeg' }
+      ]
     },
     {
       name: 'Alexander Zvevrev',
       imageUrl: '/assets/persons/AlexanderZverev.png',
       sport: 'Tennis',
+      follow: false,
       shoes: [
-        { name: 'adidas Predator 19.3', img: '' },
-        { name: 'adidas Original JEANS', img: '' },
-        { name: 'adidas adicolor tech hoodie', img: '' }
+        {
+          name: 'adidas Solecourt Clay Schuh',
+          img: '/assets/gear/solecurt.jpg'
+        },
+        {
+          name: 'adidas Ultraboost 19 shoes',
+          img: '/assets/gear/ultraboost.webp'
+        },
+        {
+          name: 'adidas reveal your vocie wind',
+          img: '/assets/gear/jacket.webp'
+        }
       ]
     }
   ]

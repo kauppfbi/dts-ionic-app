@@ -10,4 +10,5 @@ export class StarCardComponent {
   @Input() sport: string
   @Input() imageUrl: string
   @Input() shoes: any[]
+  @Input() follow: boolean
 }

@@ -9,11 +9,15 @@
 
       <div *ngFor="let shoe of shoes; let i = index">
         <ion-badge style="margin-right: 2px" color="primary">
-          <img [src]="shoe.img" style="height: 15px; border-radius: 5px" />
+          <img
+            [src]="shoe.img"
+            style="height: 15px; width:15px; border-radius: 5px"
+          />
           {{ shoe.name }}
         </ion-badge>
       </div>
     </ion-label>
-    <button ion-button clear item-end>Follow</button>
+    <button *ngIf="follow" ion-button clear item-end>Unfollow</button>
+    <button *ngIf="!follow" ion-button clear item-end>Follow</button>
   </ion-item>
 </ion-list>
