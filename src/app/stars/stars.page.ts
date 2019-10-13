@@ -16,6 +16,7 @@ export class StarsPage implements OnInit {
       name: 'Cacau',
       imageUrl: '/assets/persons/cacau.png',
       sport: 'Soccer',
+      follow: true,
       shoes: [
         { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
         {
@@ -28,6 +29,7 @@ export class StarsPage implements OnInit {
       name: 'Angelique Kerber',
       imageUrl: '/assets/persons/kerber.jpg',
       sport: 'Tennis',
+      follow: false,
       shoes: [
         { name: 'adidas Sole Match Count', img: '/assets/gear/kerber.jpg' }
       ]
@@ -36,6 +38,7 @@ export class StarsPage implements OnInit {
       name: 'Toni Kroos',
       imageUrl: '/assets/persons/kroos.jpg',
       sport: 'Soccer',
+      follow: false,
       shoes: [
         { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
         {
@@ -48,6 +51,7 @@ export class StarsPage implements OnInit {
       name: 'Manuel Neuer',
       imageUrl: '/assets/persons/neuer.jpg',
       sport: 'Soccer',
+      follow: false,
       shoes: [
         { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' },
         { name: 'adidas Original JEANS', img: '/assets/gear/jeans.webp' },
@@ -62,6 +66,7 @@ export class StarsPage implements OnInit {
       name: 'Jonas Mattisseck',
       imageUrl: '/assets/persons/JonasMattisseck.png',
       sport: 'Basketball',
+      follow: false,
       shoes: [
         { name: 'adidas Predator 19.3', img: '/assets/gear/Predator_19.3.jpg' }
       ]
@@ -70,6 +75,7 @@ export class StarsPage implements OnInit {
       name: 'Francis Obikwelu',
       imageUrl: '/assets/persons/FrancisObikwelu.png',
       sport: 'Sprinting',
+      follow: false,
       shoes: [
         {
           name: 'adidas Laufschuh adizero Prime',
@@ -82,6 +88,7 @@ export class StarsPage implements OnInit {
       name: 'Aaron Rodgers',
       imageUrl: '/assets/persons/rodgers.jpg',
       sport: 'Football',
+      follow: false,
       shoes: [
         { name: 'Adidas Football 1', img: '/assets/gear/rodgersshue.jpeg' }
       ]
@@ -90,6 +97,7 @@ export class StarsPage implements OnInit {
       name: 'Alexander Zvevrev',
       imageUrl: '/assets/persons/AlexanderZverev.png',
       sport: 'Tennis',
+      follow: false,
       shoes: [
         {
           name: 'adidas Solecourt Clay Schuh',

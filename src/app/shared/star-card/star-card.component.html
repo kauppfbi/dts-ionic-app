@@ -17,6 +17,7 @@
         </ion-badge>
       </div>
     </ion-label>
-    <button ion-button clear item-end>Follow</button>
+    <button *ngIf="follow" ion-button clear item-end>Unfollow</button>
+    <button *ngIf="!follow" ion-button clear item-end>Follow</button>
   </ion-item>
 </ion-list>
