@@ -1,11 +1,18 @@
 <ion-card class="leader-board-card">
   <ion-item>
+    <ion-note slot="start">
+      <h3>{{ position }}</h3>
+    </ion-note>
     <ion-avatar slot="start">
       <img [src]="imageUrl" alt="">
     </ion-avatar>
     <ion-label>
-        <h3>{{ name }}</h3>
-        <p>{{ description }}</p>
+      <h3>{{ name }}</h3>
+      <p>{{ description }}</p>
     </ion-label>
+
+    <ion-note slot="end">
+      <h6>{{ time }}</h6>
+    </ion-note>
   </ion-item>
 </ion-card>
