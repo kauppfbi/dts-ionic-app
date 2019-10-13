@@ -1,8 +1,11 @@
-<app-header
-  title="Stars" 
-  coins="100">
-</app-header>
+<app-header title="Stars" coins="100"> </app-header>
 
 <ion-content>
-
+  <star-card
+    *ngFor="let athlet of athlets; let i = index"
+    [name]="athlet.name"
+    [imageUrl]="athlet.imageUrl"
+    [sport]="athlet.sport"
+    [shoes]="athlet.shoes"
+  ></star-card>
 </ion-content>
