@@ -11,15 +11,15 @@ export class Tab1Page {
 
   shoes: any[] = [
     {
-      imageUrl: '/assets/ultraboost.jpg',
-      title: 'Ultraboost 19 Shoe',
+      imageUrl: '/assets/gear/ALPHAEDGE4D.webp',
+      title: 'Alphaedge 4D',
       subtitle: 'Bought 10.01.19',
       description: 0.7 * 750,
       progress: 0.7,
     },
     {
-      imageUrl: '/assets/ultraboost.jpg',
-      title: 'Ultraboost 19 Shoe',
+      imageUrl: '/assets/gear/nmd.png',
+      title: 'NMD R1',
       subtitle: 'Bought 13.09.19',
       description: 0.4 * 750,
       progress: 0.4,
@@ -41,7 +41,8 @@ export class Tab1Page {
       spinner: 'circular',
     });
 
-    loading.present().then(() => {
+    await loading.present();
+    setTimeout(() => {
       this.shoes.splice(0, 0, {
         imageUrl: '/assets/gear/am4you.jpg',
         title: 'AM4PAR',
@@ -49,6 +50,6 @@ export class Tab1Page {
         description: 0,
         progress: 0,
       });
-    });
+    }, 1500);
   }
 }
