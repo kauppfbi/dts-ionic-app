@@ -11,4 +11,7 @@ export class ChallengeCardComponent {
   @Input() description: string;
   @Input() coins: string;
   @Input() imageUrl: string;
+  @Input() participants: string;
+  @Input() location: string;
+  @Input() category: string;
 }

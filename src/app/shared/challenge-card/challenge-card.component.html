@@ -1,13 +1,28 @@
 <ion-card class="challenge-card">
-  <img [src]="imageUrl" alt="" />
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+                  <img [src]="imageUrl" alt="" />
+                </ion-avatar>
+            </ion-col>
+            <ion-col>
+              </ion-col>
+        </ion-row>
+    </ion-grid>
   <ion-card-header>
     <ion-card-subtitle>{{ subtitle }}</ion-card-subtitle>
     <ion-card-title>{{ title }}</ion-card-title>
   </ion-card-header>
   <ion-card-content>
+    <ion-badge style="margin-right: 2px" color="primary"><ion-icon name="trophy"></ion-icon> {{category}}</ion-badge>
+    <ion-badge style="margin-right: 2px" color="secondary"> <ion-icon name="people"></ion-icon> {{participants}}</ion-badge>
+    <ion-badge color="tertiary"><ion-icon name="pin"></ion-icon> {{location}}</ion-badge>
     <p>
       {{ description }}
-      <span style="color: black;">(earn {{coins}} <ion-icon name="logo-bitcoin"></ion-icon> per kilometer)</span>
+      <span style="color: black;">({{coins}} <ion-icon name="logo-bitcoin"></ion-icon>)</span>
       <br/>
       <span style="color: black;text-decoration: underline;">» Read more ...</span>
     </p>
