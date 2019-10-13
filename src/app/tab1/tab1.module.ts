@@ -1,3 +1,4 @@
+import { HeaderModule } from './../shared/header/header.module';
 import { ShoeCardComponent } from './../shared/shoe-card/shoe-card.component';
 
 import { IonicModule } from '@ionic/angular';
@@ -9,6 +10,7 @@ import { Tab1Page } from './tab1.page';
 
 @NgModule({
   imports: [
+    HeaderModule,
     IonicModule,
     CommonModule,
     FormsModule,
