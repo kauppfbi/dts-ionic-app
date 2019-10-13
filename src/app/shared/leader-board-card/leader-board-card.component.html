@@ -8,11 +8,15 @@
     </ion-avatar>
     <ion-label>
       <h3>{{ name }}</h3>
-      <p>{{ description }}</p>
+      <p>{{ time }}</p>
     </ion-label>
 
     <ion-note slot="end">
-      <h6>{{ time }}</h6>
+      <ion-chip>
+          <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+          <ion-label>verified</ion-label>
+        </ion-chip>
     </ion-note>
+  
   </ion-item>
 </ion-card>
