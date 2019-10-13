@@ -40,6 +40,13 @@ export class Tab1Page {
       translucent: true,
       spinner: 'circular',
     });
+    this.shoes.splice(0, 0, {
+      imageUrl: '/assets/ultraboost.jpg',
+      title: 'Hammer4You',
+      subtitle: 'Bought 13.10.19',
+      description: 'lorem ipsum',
+    });
+
     return await loading.present();
   }
 }
